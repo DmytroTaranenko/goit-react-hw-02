@@ -1,17 +1,6 @@
 import { useEffect, useState } from "react";
 
-function Feedback({
-  good,
-  neutral,
-  bad,
-  totalFeedback,
-  positiveFeedback,
-  feedback,
-}) {
-  if (totalFeedback === 0) {
-    return <p>No feedback yet</p>;
-  }
-
+function Feedback({ good, neutral, bad, totalFeedback, positiveFeedback }) {
   return (
     <div>
       <p>Good:{good}</p>

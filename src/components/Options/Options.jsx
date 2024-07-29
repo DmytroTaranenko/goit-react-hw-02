@@ -11,10 +11,7 @@ function Options({ onUpdateFeedback, totalFeedback, clearFeedback }) {
         Bad
       </button>
       {totalFeedback > 0 && (
-        <button
-          type="button"
-          onClick={() => clearFeedback({ good: 0, neutral: 0, bad: 0 })}
-        >
+        <button type="button" onClick={clearFeedback}>
           Reset
         </button>
       )}
